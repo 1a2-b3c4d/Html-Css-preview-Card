@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+    <style>
+      /* Reset default margin and padding */
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Basic styling */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        background-color: #c4b4b4; /* Set your background color here */
+        margin: 0;
+      }
+
+      .container {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff; /* background color here */
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+        margin: 10px;
+        padding: 0px;
+      }
+
+      .mobile {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: "Fraunces", serif;
+        font-weight: bold;
+        margin: 0;
+        
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 10px 0 5px 0;
+        font-weight: lighter;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+      }
+
+      .price p {
+        margin-right: 10px;
+        margin-top: 0;
+      }
+
+      .button {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      button {
+        width: 100%;
+        background-color: hsl(158, 36%, 37%);
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+      }
+
+      button p {
+        padding: 10px;
+        display: inline-block;
+      }
+
+      button:hover {
+        background-color: hsl(158, 65%, 20%);
+      }
+
+      #tag {
+        font-size: 34px;
+        font-family: "Fraunces", serif;
+        color: hsl(158, 36%, 37%);
+        margin-top: 20px;
+      }
+
+      #del {
+        text-decoration: line-through;
+        margin-bottom: 5px;
+      }
+      .desk {
+        display: none;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .content {
+        margin: 10px;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      
+      <img
+        class="mobile"
+        src="image-product-mobile.jpg"
+        alt="Perfume Image"
+      />
+      <img class="desk" src="image-product-desktop.jpg" alt="desktop" />
+
+      <div class="content">
+        <h1>Perfume</h1>
+        <h2>
+          Gabrielle Essence Eau <br />
+          De Parfum
+        </h2>
+        <p>
+          A floral, solar, and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p id="tag">$149.99</p>
+          <p id="del">$169.99</p>
+        </div>
+        <div class="button">
+          <button>
+            <img src="icon-cart.svg" alt="Cart Icon" />
+            <p>Add to Cart</p>
+          </button>
+        </div>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Caleb Akomaye</a>.
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    
+  </style>
+</html>
